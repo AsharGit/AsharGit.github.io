@@ -28,6 +28,14 @@ list.addEventListener('click', function(ev) {
     }
 }, false);
 
+// Listen for user pressing enter key
+let input = document.querySelector('input');
+input.addEventListener("keydown", (e) => {
+    if (e.key === 'Enter') {
+        newElement()
+    }
+} )
+
 // Create a new list
 function newElement() {
     var li = document.createElement("li");
@@ -54,4 +62,3 @@ function newElement() {
         }
     }
 }
-
